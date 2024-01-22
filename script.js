@@ -14,7 +14,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
 
   render() {
     const { activeCard } = this.state;
-    const leftCards = ["rectang4", "rectang2", "rectang1", "rectang5"].map((shape, index) => 
+    const leftCards = ["rectang4", "rectang2", "rectang1", "rectang5", "rectang6", "rectang7", "rectang8", "rectang9", "rectang10"].map((shape, index) => 
     React.createElement(leftCard, { key: index, index: index, shape: shape, onClick: this.handleCardClick }));
     const rightCards = ["square1", "square2", "square3", "square4", "square5", "square6", "square7", "square9", "square10"].map((shape, index) => 
     React.createElement(rightCard, { key: index, index: index, shape: shape, onClick: this.handleCardClick }));
@@ -41,10 +41,14 @@ class leftCard extends React.Component {
     const imagePaths = {
       rectang1: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/12_4.jpg?v=1705644974",
       rectang2: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/12_5.jpg?v=1705644975",
-      rectang3: "img/12(6).jpg",
+      rectang3: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/2_1_9519643c-af96-4b76-8d25-98b0851bf6b2.png?v=1705914443",
       rectang4: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/12_7.jpg?v=1705644973",
       rectang5: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/12_8.jpg?v=1705644973",
-      rectang6: "img/12(9).png",
+      rectang6: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/2_6.png?v=1705914443",
+      rectang7: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/2_3.png?v=1705914442",
+      rectang8: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/2_2.png?v=1705914441",
+      rectang9: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/2_4_ff10f4bf-57b8-4074-9b6a-0f3c1ba16054.png?v=1705914441",
+      rectang10: "https://cdn.shopifycdn.net/s/files/1/0666/0672/7460/files/1_1_b41a52fb-7da2-44a7-a755-235d7a247d28.png?v=1705914441",
     };
 
     return React.createElement("img",
